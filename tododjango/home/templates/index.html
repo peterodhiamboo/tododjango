@@ -2,88 +2,32 @@
 
 {% block content %}
 <section class="section">
-    <div class="container">
-        <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Component</p>
-              <button class="card-header-icon" aria-label="more options">
-                <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </header>
-            <div class="card-content">
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                iaculis mauris.
-                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
-                <br />
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-            <footer class="card-footer">
-              <a href="#" class="card-footer-item js-modal-trigger" data-target="modal-js-example" >View</a>
-              <a href="#" class="card-footer-item">Edit</a>
-              <a href="#" class="card-footer-item">Delete</a>
-            </footer>
-          </div>
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Component</p>
-              <button class="card-header-icon" aria-label="more options">
-                <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </header>
-            <div class="card-content">
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                iaculis mauris.
-                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
-                <br />
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-            <footer class="card-footer">
-              <a href="#" class="card-footer-item">Save</a>
-              <a href="#" class="card-footer-item">Edit</a>
-              <a href="#" class="card-footer-item">Delete</a>
-            </footer>
-          </div>
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Component</p>
-              <button class="card-header-icon" aria-label="more options">
-                <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </header>
-            <div class="card-content">
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                iaculis mauris.
-                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
-                <br />
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-            <footer class="card-footer">
-              <a href="#" class="card-footer-item">Save</a>
-              <a href="#" class="card-footer-item">Edit</a>
-              <a href="#" class="card-footer-item">Delete</a>
-            </footer>
-          </div>
-      <h1 class="title">
-        <p>There are currently no task, you can add them below.</p>
-      </h1>
-      <p class="subtitle">
-        click the glyphicon to add task 
-        <strong>
-          <a href="#">Add task !</a>
-        </strong>
+  <div class="container">      
+      <p class="title">There are no tasks here, kindly add  <a href="#" class="js-modal-trigger" data-target="modal-js-example">
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+      </a>
       </p>
+  </div>
+
+  <br/>
+
+
+  <!--Display item cards -->
+  <div class="card">
+    <div class="card-content">
+      <p class="title">
+        “There are two hard things in computer science: cache invalidation.”
+      </p>
+      <p class="subtitle"><b>Category</b></p>
     </div>
-  </section>
+    <footer class="card-footer">
+      <a href="#" class="card-footer-item"><i class="fa fa-eye" aria-hidden="true"></i></a>
+      <a href="#" class="card-footer-item"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+      <a href="#" class="card-footer-item"><i class="fa fa-trash" aria-hidden="true"></i></a>
+    </footer>
+  </div>
+  <!--End of item cards -->
+
+
+</section>
 {% endblock %}
