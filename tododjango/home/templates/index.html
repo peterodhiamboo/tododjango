@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+{% if context %}
+<div class="container">      
+  <p class="title">There are no tasks here, kindly add  <a href="#" class="js-modal-trigger" data-target="modal-js-example">
+    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+  </a>
+  </p>
+</div>
+{% else %}
+{% for taskings in task %}
 <section class="section">
-  <div class="container">      
-      <p class="title">There are no tasks here, kindly add  <a href="#" class="js-modal-trigger" data-target="modal-js-example">
-        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-      </a>
-      </p>
-  </div>
-
-  <br/>
-
-
   <!--Display item cards -->
   <div class="card">
     <div class="card-content">
       <p class="title">
-        “There are two hard things in computer science: cache invalidation.”
+        {{ taskings.task_context }}
       </p>
-      <p class="subtitle"><b>Category</b></p>
+      <p class="subtitle"><b>{{ taskings.task_category }}</b></p>
     </div>
     <footer class="card-footer">
       <a href="#" class="card-footer-item"><i class="fa fa-eye" aria-hidden="true"></i></a>
@@ -27,7 +27,8 @@
     </footer>
   </div>
   <!--End of item cards -->
-
-
 </section>
+{% endfor %}
+
+{% endif %}
 {% endblock %}
